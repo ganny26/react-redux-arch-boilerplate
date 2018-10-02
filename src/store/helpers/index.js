@@ -35,7 +35,7 @@ export const createAction = (actionType, fn) => {
 
 export const combineActions = (...actions) => {
   return () => {
-    const args = arguments;
+    const args = '';
     return fnDispatch => {
       actions.forEach(action => action(args)(fnDispatch));
     };
